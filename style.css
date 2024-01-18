@@ -1,0 +1,174 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+.container {
+    /*max-width: 800px;*/
+    margin: 50px auto; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+nav{
+    z-index: 100;
+    color: #fff;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    transition: background-color 0,5s ease;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    background-color: white;
+}
+
+
+
+
+nav .menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li{
+    list-style-type: none;
+    float: left;
+    line-height: 70px;  
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+        
+}
+
+nav ul li a{
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #2B874A;
+    transition: 0.5s;
+}
+
+
+
+/*header*/
+header{
+    position: relative;
+}
+
+.intro {
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+.intro h4 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+.intro .description {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 5px;
+    
+}
+
+.intro p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.intro .jargon {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+.ilustration {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.ilustration img {
+    width: 208px;
+    height: 80px;
+    justify-content: center;
+   
+}
+
+.category-grid,
+.meal-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.category-card,
+.meal-card {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+
+.category-card img,
+.meal-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.category-card p,
+.meal-card p {
+    margin-top: 10px;
+}
+
+.category-card:hover,
+.meal-card:hover {
+    transform: scale(1.05);
+}
+
+.meal-detail {
+    text-align: center;
+}
+
+.meal-detail img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+/*screen*/
+@media  screen and (max-width : 991.98px) {
+    .ilustration {
+        display: none;
+    }
+
+    nav .menu ul {
+        display: none;
+    }
+
+
+}
